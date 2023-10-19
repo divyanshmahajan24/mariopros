@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>My Website</title>
+    <title>Mario PRO's</title>
     <style>
         *,
         html {
@@ -18,19 +18,31 @@
             width: 100%;
             height: 100%;
             position: relative;
-            background-color: #ff4200;
+            background-color: #dbdbdb;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
-            color: white;
+            color: #EB7A0C;
         }
 
         hr {
             margin: 64px 256px;
-            border-top: 1px solid #fff;
+            border-top: 1px solid #EB7A0C;
         }
 
         .header {
-            text-align: center;
-            padding: 48px;
+            padding: 48px 256px;
+            display: flow-root;
+        }
+
+        .header.right {
+            float: right;     
+        }
+
+        .float-left {
+            float: left
+        }
+
+        .float-right {
+            float: right
         }
 
         h1 {
@@ -47,7 +59,7 @@
 
         .section h3 {
             font-size: 32px;
-            margin-bottom: 16px;
+            margin-bottom: 32px;
             font-weight: bold;
         }
 
@@ -57,7 +69,44 @@
         }
 
         .section a {
-            color: #fff;
+            color: #EB7A0C;
+        }
+
+        .menu {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        .menu li {
+            margin: 22px 16px;
+            font-size: 24px;
+        }
+
+        .menu li a{
+            cursor: pointer;
+        }
+
+        .menu li a:hover{
+            cursor: pointer;
+            color: #bc6208;
+        }
+
+        .menu li a:visited{
+            color: #EB7A0C;
+            border-bottom: none;
+            text-decoration: none;
+        }
+
+        .display-flex {
+            display: flex;
+        }
+
+        .about-left {
+            flex: 8;
+        }
+
+        .about-right {
+            flex: 4;
         }
     </style>
 </head>
@@ -65,20 +114,23 @@
 <body>
     <div class="main">
         <div class="header">
-            <h1>Mario PRO's</h1>
+            <h1 class="float-left">Mario PRO's</h1>
+            <div class="right float-right">
+                <ul class="menu">
+                    <li>
+                        <a href="/">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="section">
             <h3>About Us</h3>
             <p>Mario PRO's Delivery Kitchen: Where Pizza Meets Playful Nostalgia.</p>
             <p>&nbsp;</p>
             <p>Discover a delightful fusion of classic flavours and nostalgic fun at Mario Pros. Our delivery kitchen brings you artisanal pizzas made with the finest ingredients and a dash of whimsy inspired by the beloved game franchise "Mario Bros." Indulge in mouthwatering premium pizzas delivered straight to your doorstep, accompanied by a touch of gaming nostalgia. Elevate your pizza experience with Mario PRO's Delivery Kitchen.</p>
-        </div>
-        <hr>
-        <div class="section">
-            <h3>Contact Us</h3>
-            <p>Phone: <a href="tel:9990774772">+91-999-077-4772</a></p>
-            <p>Website: <a href="www.mariopros.in">www.mariopros.in</a></p>
-            <p>Email: <a href="mailto:hello@mariopros.com">hello@mariopros.com</a></p>
         </div>
     </div>
 </body>
